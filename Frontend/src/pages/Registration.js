@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Alert } from "react-bootstrap";
 import Login from "./Login";
 import "./login.css"
+import axios from 'axios';
 
 function Registration() {
   const [name, setName] = useState("");
@@ -32,6 +33,14 @@ function Registration() {
       setLogin(!login);
     }
   }
+  
+  await axios.post("http://localhost:8030/save",
+  {
+    name: name,
+    email: email,
+    password: password,
+    phone: phone
+  });
 
   function handleClick() {
     setLogin(!login);
