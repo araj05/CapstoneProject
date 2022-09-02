@@ -17,9 +17,9 @@ root.render(
   <AppProvider>
     <BrowserRouter>
       <Routes>
-      <Route path = "Registration" element = {<Registration />} />
+      <Route path = "" element = {<Registration />} />
       <Route path = "Login" element = {<Login />} />
-        <Route path = "/" element = {<Home />}>
+        <Route path = "" element = {<Home />}>
           
           {/* <Route path = "Login" element = {<Login />} /> */}
           <Route path = "book" element = {<BookList />} />
