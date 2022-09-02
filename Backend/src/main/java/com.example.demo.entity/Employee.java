@@ -15,17 +15,17 @@ public class Employee {
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private long id;
 	    
-	    @Column(name="fname")
-	    private String fname;
+	    @Column(name="name")
+	    private String name;
 	    
-	    @Column(name="lname")
-	    private String lname;
-	    
-	    @Column(name="username")
-	    private String username;
+	    @Column(name="email")
+	    private String email;
 	    
 	    @Column(name="pw")
 	    private String pw;
+	
+	    @Column(name="phone")
+	    private String phone;
 	 
 		public long getId() {
 		return id;
@@ -35,28 +35,20 @@ public class Employee {
 		this.id = id;
 		}
 		 
-		public String getFname() {
-		return fname;
+		public String getName() {
+		return name;
 		}
 		 
-		public void setFname(String fname) {
-		this.fname = fname;
+		public void setName(String name) {
+		this.fname = name;
 		}
 		 
-		public String getLname() {
-		return lname;
+		public String getEmail() {
+		return email;
 		}
 		 
-		public void setLname(String lname) {
-		this.lname = lname;
-		}
-
-		public String getUsername() {
-			return username;
-		}
-
-		public void setUsername(String username) {
-			this.username = username;
+		public void setEmail(String email) {
+		this.email = email;
 		}
 
 		public String getPw() {
@@ -65,6 +57,14 @@ public class Employee {
 
 		public void setPw(String pw) {
 			this.pw = pw;
+		}
+	
+		public String getPhone() {
+			return phone;
+		}
+
+		public void setPhone(String phone) {
+			this.phone = phone;
 		}
 		 
 }
